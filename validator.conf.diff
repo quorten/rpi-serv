@@ -1,0 +1,20 @@
+--- validator.conf.old	2018-09-04 22:39:59.125297892 -0500
++++ validator.conf	2018-09-04 22:39:59.125297892 -0500
+@@ -19,7 +19,7 @@
+   #
+   # Base path.  Defaults to the value of the W3C_VALIDATOR_HOME environment
+   # variable or /usr/local/validator if the variable does not exist.
+-  #Base = /usr/local/validator
++  Base = /usr/local/share/w3c-markup-validator
+ 
+   #
+   # Location of template files
+@@ -54,7 +54,7 @@
+ 
+ #
+ # Whether private RFC1918 addresses are allowed.
+-Allow Private IPs = no
++Allow Private IPs = yes
+ 
+ #
+ # Enable (or not) the web service API for this validator

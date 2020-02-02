@@ -1,0 +1,37 @@
+--- dovecot.conf.bak	2014-03-02 20:41:32.311150624 -0600
++++ dovecot.conf	2014-03-02 20:42:54.800513666 -0600
+@@ -22,7 +22,7 @@
+ # Protocols we want to be serving: imap imaps pop3 pop3s managesieve
+ # If you only want to use dovecot-auth, you can set this to "none".
+ #protocols = imap imaps
+-protocols = none
++protocols = imap
+ 
+ # A space separated list of IP or host addresses where to listen in for
+ # connections. "*" listens in all IPv4 interfaces. "[::]" listens in all IPv6
+@@ -123,7 +123,7 @@
+ # How often to regenerate the SSL parameters file. Generation is quite CPU
+ # intensive operation. The value is in hours, 0 disables regeneration
+ # entirely.
+-#ssl_parameters_regenerate = 168
++ssl_parameters_regenerate = 0
+ 
+ # SSL ciphers to use
+ #ssl_cipher_list = ALL:!LOW:!SSLv2
+@@ -227,7 +227,7 @@
+ #
+ # </usr/share/doc/dovecot-common/wiki/MailLocation.txt>
+ #
+-#mail_location = 
++mail_location = /home/%u/Maildir
+ 
+ # If you need to set multiple mailbox locations or want to change default
+ # namespace settings, you can do it by defining namespace sections.
+@@ -549,6 +549,7 @@
+ ##
+ 
+ protocol imap {
++  listen = *:143
+   # Login executable location.
+   #login_executable = /usr/lib/dovecot/imap-login
+ 

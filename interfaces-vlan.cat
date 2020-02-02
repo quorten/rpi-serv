@@ -1,0 +1,7 @@
+
+# The internal IPv4 address for the home server.
+auto eth0.1
+iface eth0.1 inet static
+    address 192.168.1.1
+    netmask 255.255.255.0
+    vlan-raw-device eth0

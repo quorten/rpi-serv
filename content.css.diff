@@ -1,0 +1,8 @@
+--- content.css.orig	2009-11-07 17:15:26.000000000 -0600
++++ content.css	2013-11-30 07:03:49.729882716 -0600
+@@ -1,4 +1,4 @@
+-body, td, pre {color:#000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; margin:8px;}
++body, td, pre {color:#000; margin:8px;}
+ body {background:#FFF;}
+ body.mceForceColors {background:#FFF; color:#000;}
+ h1 {font-size: 2em}

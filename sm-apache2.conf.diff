@@ -1,0 +1,11 @@
+--- apache.conf	2010-07-06 16:43:21.000000000 -0500
++++ /etc/apache2/sites-available/squirrelmail	2013-03-06 20:20:50.919982145 -0600
+@@ -2,6 +2,8 @@
+ 
+ <Directory /usr/share/squirrelmail>
+   Options Indexes FollowSymLinks
++  Order allow,deny
++  Allow from all
+   <IfModule mod_php5.c>
+     php_flag register_globals off
+   </IfModule>

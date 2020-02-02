@@ -1,0 +1,9 @@
+NOT included/installed: Samba, though this was on the old server.  Not
+really ever used.
+
+Important!  When cutting over to new server hardware, copy the logs
+from the old server to the new server for reference.  (Well, at least
+the logs you care about.)  Don't worry about copying over the SSH
+keys.  In fact, you shouldn't do this as SSH keys should generally
+correspond to machines, not host names.  Of course, ultimately it's
+your choice.

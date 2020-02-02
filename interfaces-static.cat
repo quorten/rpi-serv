@@ -1,0 +1,11 @@
+
+# The static IP alias for the home server.
+auto eth0:0
+iface eth0:0 inet static
+    address 192.168.1.202
+    netmask 255.255.255.0
+
+# The static IPv6 address for the home server.
+iface eth0 inet6 static
+    address fd2e:b90a:b821:4e98:a729:3331:b863:aebb
+    netmask 64

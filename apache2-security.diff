@@ -1,0 +1,21 @@
+--- apache2.conf.orig	2018-03-31 04:17:48.000000000 -0500
++++ apache2.conf	2018-09-03 10:01:49.430008553 -0500
+@@ -167,6 +167,18 @@
+ 	Require all granted
+ </Directory>
+ 
++<Directory /home/>
++	Options Indexes FollowSymLinks
++	AllowOverride None
++	Require all granted
++</Directory>
++
++<Directory /usr/share/doc/>
++	Options Indexes FollowSymLinks
++	AllowOverride None
++	Require all granted
++</Directory>
++
+ #<Directory /srv/>
+ #	Options Indexes FollowSymLinks
+ #	AllowOverride None
