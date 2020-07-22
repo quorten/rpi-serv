@@ -18,7 +18,7 @@ build-essential miscfiles manpages-dev git'
 
 # Command-line tools that are much needed!
 PACKAGES=$PACKAGES'
-info -texinfo-doc-nonfree sudo rsync patch bind9-host screen'
+info -texinfo-doc-nonfree sudo rsync patch bind9-host screen bc'
 
 # Install some text editors.
 PACKAGES=$PACKAGES'
