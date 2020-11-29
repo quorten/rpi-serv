@@ -294,6 +294,9 @@ chgrp adm /var/log/librecmc
 chmod o-rx /var/log/librecmc
 /etc/init.d/rsyslog restart
 
+# Also setup `logrotate` for network devices.
+cp lr-librecmc /etc/logrotate.d/librecmc
+
 # Configure apcupsd (minimal configuration).
 sed -i -e '/^UPSCABLE/c\UPSCABLE usb' \
     -e '/^UPSTYPE/c\UPSTYPE usb' \

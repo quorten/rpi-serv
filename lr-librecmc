@@ -1,0 +1,16 @@
+/var/log/librecmc/router.log
+/var/log/librecmc/ap2nd.log
+/var/log/librecmc/ap1st.log
+{
+  rotate 1200
+  monthly
+  compress
+  delaycompress
+  missingok
+  notifempty
+  sharedscripts
+  postrotate
+    invoke-rc.d rsyslog rotate > /dev/null
+  endscript
+}
+
